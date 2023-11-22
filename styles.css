@@ -1,0 +1,51 @@
+.contenedor-app {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.nota {
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  min-width: 150px;
+  max-width: 300px;
+  cursor: move;
+}
+
+.eliminar-nota {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  color: red;
+  font-size: 16px;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-contenido {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10% auto;
+  width: 50%;
+}
+
+.cerrar-modal {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+

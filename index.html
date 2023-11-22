@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sticky Notes</title>
+</head>
+<body>
+    <div class="contenedor-app">
+        <div class="encabezado">
+            <h1>Sticky Notes</h1>
+        </div>
+        <div class="opciones">
+            <button id="cambiar-vista">Cambiar Vista</button>
+            <button id="crear-nota">Crear Nota</button>
+        </div>
+        <div id="app" class="app">
+        </div>
+    </div>
+    <div id="modal-crear-nota" class="modal">
+      <div class="modal-contenido">
+          <span class="cerrar-modal" onclick="cerrarModal()">&times;</span>
+          <label for="titulo">Título:</label>
+          <input type="text" id="titulo" name="titulo">
+          <label for="texto">Contenido:</label>
+          <textarea id="texto" name="texto"></textarea>
+          <button onclick="crearNota()">Crear Nota</button>
+      </div>
+  </div>
+    <script src="modelo.js"></script>
+    <script src="vista.js"></script>
+    <script src="controlador.js"></script>
+</body>
+</html>
